@@ -1,59 +1,31 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Profil Saya</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            background-color: #f2f2f2;
-        }
-        .container {
-            max-width: 600px;
-            background-color: #ffffff;
-            padding: 20px;
-            border-radius: 8px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            text-align: center;
-        }
-        .container img {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            margin-bottom: 15px;
-        }
-        .container h1 {
-            font-size: 24px;
-            color: #333333;
-        }
-        .container p {
-            color: #666666;
-        }
-        .social-links a {
-            margin: 0 10px;
-            text-decoration: none;
-            color: #0077b5;
-            font-size: 24px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lua Obfuscator</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <img src="https://via.placeholder.com/150" alt="Foto Profil">
-        <h1>Nama Anda</h1>
-        <p>Halo, saya [Nama Anda]. Saya seorang [pekerjaan atau minat Anda]. Saya memiliki ketertarikan dalam [bidang atau minat Anda].</p>
-        <p>Saya senang berinteraksi dengan orang-orang dan belajar hal-hal baru setiap hari. Di halaman ini, Anda bisa mengenal lebih dekat tentang saya dan karya saya.</p>
-        <div class="social-links">
-            <a href="https://www.linkedin.com/in/username" target="_blank">LinkedIn</a>
-            <a href="https://twitter.com/username" target="_blank">Twitter</a>
-            <a href="https://github.com/username" target="_blank">GitHub</a>
-        </div>
-    </div>
+  <header>
+    <h1>Lua Obfuscator</h1>
+    <p>Simplify and secure your Lua scripts with futuristic technology.</p>
+  </header>
+  <main>
+    <section id="obfuscate">
+      <h2>Obfuscate Your Script</h2>
+      <textarea id="luaInput" placeholder="Paste your Lua script here"></textarea>
+      <button id="obfuscateBtn">Obfuscate</button>
+      <textarea id="luaOutput" placeholder="Your obfuscated Lua script will appear here" readonly></textarea>
+    </section>
+    <section id="about">
+      <h2>About Lua Obfuscation</h2>
+      <p>Obfuscation is a process of transforming Lua scripts into a less readable format while preserving functionality, making it harder for others to reverse-engineer your code.</p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Lua Obfuscator | Designed with a futuristic vision</p>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>

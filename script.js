@@ -8,8 +8,8 @@ document.getElementById('obfuscateBtn').addEventListener('click', () => {
   // Basic simulation of obfuscation (for demonstration purposes)
   const obfuscated = luaInput
     .split('')
-    .map(char => char.charCodeAt(0).toString(16))
-    .join(' ');
+    .map(char => char.charCodeAt(0).toString(10))
+    .join('\\');
 
-  document.getElementById('luaOutput').value = `-- Obfuscated Lua Script --\n${obfuscated}`;
+  document.getElementById('luaOutput').value = `-- Obfuscated Lua Script --\nload([[\\${obfuscated}]])()`;
 });

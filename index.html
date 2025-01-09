@@ -1,31 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lua Obfuscator</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Portofolio Saya</title>
   <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
 <body>
-  <header>
-    <h1>Lua Obfuscator</h1>
-    <p>Simplify and secure your Lua scripts with futuristic technology.</p>
+
+  <!-- Header -->
+  <header id="header">
+    <div class="container">
+      <h1>Selamat datang di Portofolio Saya</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">Tentang Saya</a></li>
+          <li><a href="#skills">Keahlian</a></li>
+          <li><a href="#projects">Proyek</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main>
-    <section id="obfuscate">
-      <h2>Obfuscate Your Script</h2>
-      <textarea id="luaInput" placeholder="Paste your Lua script here"></textarea>
-      <button id="obfuscateBtn">Obfuscate</button>
-      <textarea id="luaOutput" placeholder="Your obfuscated Lua script will appear here" readonly></textarea>
-    </section>
-    <section id="about">
-      <h2>About Lua Obfuscation</h2>
-      <p>Obfuscation is a process of transforming Lua scripts into a less readable format while preserving functionality, making it harder for others to reverse-engineer your code.</p>
-    </section>
-  </main>
+
+  <!-- Tentang Saya Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2>Tentang Saya</h2>
+      <p>Halo, saya Aleph, seorang pengembang web yang penuh semangat dengan kecintaan pada pemrograman dan membangun situs web interaktif.</p>
+    </div>
+  </section>
+
+  <!-- Keahlian Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Keahlian Saya</h2>
+      <ul class="skills-list">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>Lua</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Proyek Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Proyek Saya</h2>
+      <div class="project">
+        <h3>Proyek 1: Situs Portofolio</h3>
+        <p>Situs portofolio responsif yang dibangun dengan HTML, CSS, dan JavaScript.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kontak Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Kontak Saya</h2>
+      <p>Jika Anda ingin menghubungi saya, kirimkan email ke <a href="mailto:alephsc25@gmail.com">alephsc25@gmail.com</a></p>
+      <button class="contact-button" onclick="p('Halo!');">Hubungi Saya</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2024 Lua Obfuscator | Designed with a futuristic vision</p>
+    <div class="container">
+      <p>&copy; 2025 Aleph. Semua hak cipta dilindungi.</p>
+    </div>
   </footer>
-  <script src="script.js"></script>
+
 </body>
 </html>

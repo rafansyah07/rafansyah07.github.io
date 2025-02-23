@@ -1,96 +1,160 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>web pribadi</title>
-    <link rel="stylesheet" href="style/style.css">
-</head>
+    <title>Portofolio Foto</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
 
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        nav ul li {
+            margin: 0 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 1.1rem;
+        }
+
+        nav ul li a:hover {
+            color: #ff6600;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        section {
+            padding: 40px 0;
+        }
+
+        #about, #contact {
+            background-color: #fff;
+            margin-bottom: 30px;
+            padding: 20px;
+            border-radius: 8px;
+        }
+
+        #gallery {
+            background-color: #f9f9f9;
+            padding: 20px 0;
+        }
+
+        #gallery .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .gallery-item img:hover {
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        footer a {
+            color: #ff6600;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
 <body>
-    <nav>
-        <div class="wrapper">
-            <div class="logo"><a href=''>Diancakmal.</a></div>
-            <div class="menu">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#courses">About Me</a></li>
-                    <li><a href="#partners">Partners</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="" class="tbl-biru">Sign Up</a></li>
-                </ul>
+
+    <header>
+        <h1>Portofolio Foto Saya</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">Tentang Saya</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li><a href="#contact">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about" class="container">
+        <h2>Identita Saya</h2>
+        <p>NAMA : M.RAFANSYAH SAPUTRA</p>
+<P>TTL : LAMONGAN,18 JANUARI 2028</P>
+<p>ALAMAT : Rt.4,Rw.1,Ds.Dradah blumbang,Kec.Kedungpring,Kab.lamongan</p>
+    </section>
+
+    <section id="about" class="container">
+        <h2>Tentang Saya</h2>
+        <p>Saya seorang pelajar yang memiliki minat dalam bidang apa pun dan suka mencari pengalaman dan berjelajah. Berikut adalah beberapa pengalaman tentang saya.</p>
+    </section>
+
+    <section id="gallery" class="container">
+        <h2>Galeri Foto</h2>
+        <div class="gallery-grid">
+            <div class="gallery-item">
+                <img src="c:\Users\M.RAFANSYAH SAPUTRA\Documents\gambar praktek\20241224_054225.jpg" alt="Foto 1">
+            </div>
+            <div class="gallery-item">
+                <img src="c:\Users\M.RAFANSYAH SAPUTRA\Documents\gambar praktek\476928607_1908361863032709_1916070524423513622_n.jpg" alt="Foto 2">
+                <p> Foto 2</p>
+            </div>
+            <div class="gallery-item">
+                <img src="c:\Users\M.RAFANSYAH SAPUTRA\Documents\gambar praktek\471493230_985796426709287_7162142671151727806_n.jpg" alt="Foto 3">
+                <p> Foto 3</p>
+            </div>
+            <div class="gallery-item">
+                <img src="c:\Users\M.RAFANSYAH SAPUTRA\Pictures\Screenshots\Screenshot 2024-11-18 133509.png" alt="Foto 4">
+                <p> Foto 4</p>
             </div>
         </div>
-    </nav>
-    <div class="wrapper">
-        <section id="courses">
-            <div class="kolom1">
-                <p class="deskripsi">Tentang Saya</p>
-                <h2>Asal Usul <span style="color: black;">Diancakmal.</span></h2>
-                <p>DianCakmal adalah seorang programmer yang ahli dalam merancang dan mengembangkan perangkat lunak.
-                     Dengan keahlian dalam: html, Java, CSS dan bahasa pemrograman Ctrl+C
-                      Dian telah berkontribusi dalam berbagai proyek menarik.</p>
-                <p>DianCakmal, selain seorang programmer handal, juga memiliki jiwa kreatif yang tinggi.
-                     Ia senang menjelajahi teknologi-teknologi terbaru dan menerapkannya dalam proyek-proyeknya.
-                      Di waktu luang, Dian sering kali mengikuti kursus online,
-                       berkontribusi pada proyek open source, atau menulis blog tentang teknologi.</p>
-                <p><a href="" class="tbl-biru">Pelajari Lebih Lanjut</a></p>
-            </div>
-            <img src="assets/toss.jpg" style="height: 500px;" />
-        </section>
-        <section id="partners">
-            <div class="tengah">
-                <div class="kolom">
-                    <p class="deskripsi">Our Top Partners</p>
-                    <h2>Partners</h2>
-                    <p>PROGRAM STUDI SISTEM INFORMASI
-                        FAKULTAS SAINS DAN TEKNOLOGI
-                        UNIVERSITAS PESANTREN TINGGI DARUL ULUM JOMBANG
-                        2024
-                    </p>
-                </div>
-                <div class="partner-list">
-                    <div class="kartu-partner">
-                        <img src="assets/ad.jpeg" />
-                    </div>
-                    <div class="kartu-partner">
-                        <img src="assets/unipdu.png" />
-                    </div>
-                    <div class="kartu-partner">
-                        <img src="assets/dk.jpeg" />
-                    </div>
-                </div>
-            </div>
-        </section>
-    </div>
-    <div id="contact">
-        <div class="wrapper">
-            <div class="footer">
-                <div class="footer-section">
-                    <h3>diancakmal</h3>
-                    <p>Seorang mahasiswa unipdu yang kesepian dan memiliki multitasking skill</p>
-                </div>
-                <div class="footer-section">
-                    <h3>About</h3>
-                    <p>saya membuat website ini untuk memenuhi tugas mata kuliah pemrograman web</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Contact</h3>
-                    <p>Jl. inpres tambar Jombang</p>
-                    <p>Kode Pos: 516485</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Social</h3>
-                    <p><b>tiktok</b>   diankamljoe @sttrn</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div id="copyright">
-        <div class="wrapper">
-            &copy; 2024. <b>Diancakmal</b> All Rights Reserved.
-        </div>
-    </div>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Kontak</h2>
+        <p>Jika Anda tertarik untuk bekerja sama atau ingin bertanya lebih lanjut, silakan hubungi saya melalui:</p>
+        <ul>
+            <li>Email: <a href="mailto:email@example.com">email@rafansyahsaputra4.com</a></li>
+            <li>Instagram: <a href="https://instagram.com/username" target="_blank">@rfnn_syh</a></li>
+            <li>No WhatsApp: <a href="mailto:email@example.com">085732775739</a></li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Portofolio Foto Saya</p>
+    </footer>
+
 </body>
 </html>
